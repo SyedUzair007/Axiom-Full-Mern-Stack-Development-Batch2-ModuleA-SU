@@ -14,6 +14,12 @@ function showError(input,message){
     small.innerText = message;
 }
 
+//success function
+function showSuccess(input){
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+}
+
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     console.log(username);
