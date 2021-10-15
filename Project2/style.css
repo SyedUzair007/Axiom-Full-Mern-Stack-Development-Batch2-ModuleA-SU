@@ -117,7 +117,13 @@ p.totals span{
     border-radius: 23px;
     border-color: blueviolet;
     padding: 10px;
+    margin-bottom: 30px;
 
+}
+
+.header{
+    
+    text-align: center;
 }
 
 
