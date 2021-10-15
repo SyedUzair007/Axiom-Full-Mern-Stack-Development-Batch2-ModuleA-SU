@@ -12,6 +12,7 @@
         <div class="content-threater">
             <label for="">Select Movie</label>
             <select id="movie">
+                <option value="0">Select Movie</option>
                 <option value="50">Venom</option>
                 <option value="20">Spiderman (No Way Home)</option>
                 <option value="70">Doctor Strange 2</option>
@@ -40,7 +41,11 @@
         </ul>
         <!--The Container to display screen and seating chart-->
         <div class="container">
-            <div class="screen"></div>
+            <div class="screen" controls>
+                <video id="video" class="video" width="260">
+                    <source id="source" src="movies/soon.mkv">
+                  </video>
+            </div>
             <!--This is row 1-->
             <div class="row">
                 <div class="seat"></div>
@@ -48,8 +53,8 @@
                 <div class="seat"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
                 <div class="seat"></div>
             </div>
                  <!--This is row 2-->
@@ -57,16 +62,16 @@
                     <div class="seat"></div>
                     <div class="seat"></div>
                     <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
                     <div class="seat"></div>
                 </div>
                      <!--This is row 3-->
             <div class="row">
-                <div class="seat"></div>
-                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
@@ -80,20 +85,20 @@
                     <div class="seat"></div>
                     <div class="seat"></div>
                     <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
                     <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
                 </div>
                      <!--This is row 5-->
             <div class="row">
+                <div class="seat occupied"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
                 <div class="seat"></div>
             </div>
                  <!--This is row 6-->
@@ -102,15 +107,15 @@
                     <div class="seat"></div>
                     <div class="seat"></div>
                     <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
+                    <div class="seat selected"></div>
+                    <div class="seat selected"></div>
+                    <div class="seat selected"></div>
+                    <div class="seat selected"></div>
                 </div>
         </div>
 
         <!--showing total seats and price-->
-        <p class="totals">You have Selected <span id="count">0 </span>seats. Your total amount is <span id="total">0</span></p>
+        <p class="totals">You have Selected <span id="count">0 </span> seats. Your total amount is <span id="total">0</span> rupees</p>
 </body>
 <script src="script.js"></script>
 </html>
